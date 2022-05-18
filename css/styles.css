@@ -12,7 +12,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 ul {
     list-style: none;
 }
@@ -25,7 +24,6 @@ text-decoration: none;
 .logo {
     color: var(--title-text-color);
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -39,25 +37,28 @@ text-decoration: none;
 }
 
 /* Site nav */
-.site-nav a, a {
+.site-nav a {
     color: var(--title-text-color);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.header-contacts a {
-    color: var(--primary-text-color)
-}
-
-.site-nav a:hover, .site-nav a:focus, .header-contacts a:hover .header-contacts a:focus {
+.site-nav .studio-page {
     color: var(--accent-color);
 }
 
-.header-contacts a:hover, .header-contacts a:focus {
-color:var(--accent-color)
+.site-nav .portfolio-page {
+    color: var(--accent-color);
+}
+
+.contacts a {
+    color: var(--primary-text-color);
+}
+
+.contacts a:hover, .contacts a:focus {
+color:var(--accent-color);
 }
 
 /* Hero */
@@ -67,11 +68,9 @@ color:var(--accent-color)
 }
 
 .hero-title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -79,18 +78,16 @@ color:var(--accent-color)
 }
 
 .button {
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
     color: #FFFFFF;
     background-color: var(--accent-color);
-    width: 200px;
-    height: 50px;
 }
 
 /* Section */
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -101,8 +98,8 @@ color:var(--accent-color)
 }
 
 /* Особенности */
+
 .section-item-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -117,60 +114,48 @@ color:var(--accent-color)
 }
 
 /* Наша команда */
+
 .team {
 background-color: var(--second-background-color);
 }
 
 .teammember {
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
-/* identical to box height */
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
 }
 
 .team-role {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
 /* Footer */
-footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
-    background: var(--first-background-color);
+
+.footer {
+    background-color: var(--first-background-color);
 }
 .footer-logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.footer-adress {
-font-family: 'Roboto';
+.address {
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
-/* or 171% */
-
+line-height: calc(24/14);
 letter-spacing: 0.03em;
-
+}
+.footer-address {
 color: #FFFFFF;
 }
 .footer-contacts {
@@ -185,13 +170,13 @@ color: #FFFFFF;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62x;
-    /* identical to box height, or 162% */
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 .portfolio-button:hover, .portfolio-button:focus {
+font-family: inherit;
 border: none;
 border-radius: 4px;
 background-color: var(--accent-color);
@@ -201,27 +186,16 @@ cursor: pointer;
 
 .portfolio-list  h2 {
     color: var(--title-text-color);
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
-    /* identical to box height, or 200% */
     letter-spacing: 0.06em;
+    text-align: center;
 }
-.portfolio-item-type {
-    color: var(--primary-text-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    /* identical to box height, or 188% */
-    letter-spacing: 0.03em;
-}
-/* основной цвет текста #757575 */
-/* вторичный цвет текста #212121 */
-/* белый #FFFFFF */
-/* акцент #2196F3 */
 
-/* цвет фона #FFFFFF */
-/* первичный цвет фона #2F303A */
-/* вторичный цвет фона #F5F4FA */
+.portfolio-item-type {
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
